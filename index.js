@@ -3,7 +3,7 @@ const Discord = require('discord.js'),
     client = new Discord.Client(),
     config = {
         prefix: process.env.PREFIX || "+",
-        token: process.env.TOKEN || "Nzk1MDI4NzEwOTQ4MjA4NjYw.X_DaLw.yfQ5ncQHYaqpf11zqe_8SENgzdE"
+        token: process.env.TOKEN || "Nzk1MDI4NzEwOTQ4MjA4NjYw.X_DaLw.R_0OFvECyBAGwX1xnKTOe6lWG7M"
     };
 
 const distube = new DisTube(client, { searchSongs: false, emitNewSongOnly: true });
