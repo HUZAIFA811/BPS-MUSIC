@@ -3,7 +3,7 @@ const Discord = require('discord.js'),
     client = new Discord.Client(),
     config = {
         prefix: process.env.PREFIX || "+",
-        token: process.env.TOKEN || "Nzk1MDI4NzEwOTQ4MjA4NjYw.X_DaLw.R_0OFvECyBAGwX1xnKTOe6lWG7M"
+        token: process.env.TOKEN || "ODA2MTA2NjQ5NzU1OTEwMTU1.YBknUg.Ap7pvfdph085WnrC37M3n3e3V7g"
     };
 
 const distube = new DisTube(client, { searchSongs: false, emitNewSongOnly: true });
@@ -11,7 +11,7 @@ const distube = new DisTube(client, { searchSongs: false, emitNewSongOnly: true 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     console.log(`This bot is made by Shahzain please do not take any credits of this bot`) 
-    client.user.setActivity(`${config.prefix}help || Bot by Shahzain`, {
+    client.user.setActivity(`${config.prefix}help || BPS SONG`, {
         type: "LISTENING"
     })
 });
@@ -24,7 +24,7 @@ client.on("message", async (message) => {
 
     if (command === "help") {
         let embed = new Discord.MessageEmbed()
-        .setColor('GREEN')
+        .setColor('RED')
         .setTitle(`${client.user.username} Commands`)
         .setThumbnail(client.user.displayAvatarURL())
         .addField('Play Command', `${config.prefix}play`)
@@ -42,7 +42,7 @@ client.on("message", async (message) => {
         .addField('Karaoke Comamnd', `${config.prefix}karaoke`)
         .addField('Nightcore Command', `${config.prefix}nightcore`)
         .addField('Vaporwave Command', `${config.prefix}vaporwave`)
-        .setFooter(`© Shahzain `, client.user.displayAvatarURL())
+        .setFooter(`BPS MUSIC`, client.user.displayAvatarURL())
         message.channel.send(embed)
     }
 
